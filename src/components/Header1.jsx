@@ -6,18 +6,6 @@ const Header1 = () => {
 
    const [toggle, setToggle] = useState(false)
    const [mobileViewWidth,setmobileViewWidth]=useState(window.innerWidth)
-
-   console.log('mobileViewWidth',mobileViewWidth)
-
-   
-
-   // useEffect(()=>{
-
-   //    console.log('useEffect==>Running',mobileViewWidth)
-
-
-   // },[mobileViewWidth])
-
    const handleResize = () => {
       setmobileViewWidth(window.innerWidth);
     };
